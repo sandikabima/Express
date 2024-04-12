@@ -1,0 +1,39 @@
+[
+    {
+        "CustomerID" : 1,
+        "CustomerName" : "Bima sandika",
+        "Email" : "bimasandika@gmail.com",
+        "Address" : "Ketepi No.5",
+        "City" : "Padang",
+        "PostalCode" : 55667,
+        "Country" : "Indonesia"
+    },
+    {
+        "CustomerID" : 2,
+        "CustomerName" : "Maria Anders",
+        "Email" : "Futterkiste@gmail.com",
+        "Address" : "Obere Str. 57",
+        "City" : "Berlin",
+        "PostalCode" : 12209,
+        "Country" : "Germany"
+    },
+    {
+        "CustomerID" : 3,
+        "CustomerName" : "Ana Trujillo",
+        "Email" : "anatrujillo@gmail.com",
+        "Address" : "Avda. de la Constitución 2222",
+        "City" : "México D.F.",
+        "PostalCode" : 15021,
+        "Country" : "Mexico"
+    },
+    {
+        "CustomerID" : 4,
+        "CustomerName" : "Thomas Hardy",
+        "Email" : "anatrujillo@gmail.com",
+        "Address" : "120 Hanover Sq",
+        "City" : "London",
+        "PostalCode" : 89387,
+        "Country" : "UK"
+    }
+
+]
