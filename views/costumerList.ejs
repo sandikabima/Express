@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:hover {
+        background-color: coral;
+      }
+
+	  h2 {
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+	  }
+    </style>
+  </head>
+  <body>
+    <h2>Table Costumers</h2>
+	<hr>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Costumer Name</th>
+        <th>Email</th>
+        <th>Adress</th>
+        <th>City</th>
+        <th>Postal Code</th>
+        <th>Country</th>
+      </tr>
+    <% for (let i = 0; i < costumers.length; i++) { %>
+			<tr>
+				<td><%= costumers[i].id %></td>
+				<td><%= costumers[i].name %></td>
+				<td><%= costumers[i].email %></td>
+				<td><%= costumers[i].address %></td>
+				<td><%= costumers[i].city %></td>
+				<td><%= costumers[i].postalcode %></td>
+				<td><%= costumers[i].country %></td>
+			</tr>
+		<% } %>
+    </table>
+	<hr>
+  </body>
+</html>
