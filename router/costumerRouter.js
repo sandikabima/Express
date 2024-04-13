@@ -6,4 +6,6 @@ router.get('/list', Controller.list)
 router.get('/add', Controller.addCostumersForm)
 router.post('/add', Controller.addCostumers)
 
+router.get('/:id', Controller.deleteCostumers)
+
 module.exports = router

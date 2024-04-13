@@ -30,6 +30,12 @@ class Controller {
         
     }
 
+    static deleteCostumers(req, res){
+       let id = req.params.id
+       costumers.delete(id)
+       res.redirect('/costumers/list')
+    }
+
 }
 
 module.exports = Controller
