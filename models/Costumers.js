@@ -26,6 +26,17 @@ class Costumers {
             }
         })
     }
+
+    static create(costumer, callback){
+
+        const query = `insert into "Costumers" ("Name", "Email", "Address", "City", "PostalCode", Country) values ('${costumer.name}','${costumer.email}','${costumer.address}','${costumer.city}','${costumer.postalcode}','${costumer.country}')`
+
+        pool.query(query, (err, data)=>{
+            if (err) callback(err, null)
+            callback(null, data)
+
+        })
+    }
 }
 
 module.exports = Costumers

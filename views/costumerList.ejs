@@ -1,35 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      table {
-        border-collapse: collapse;
-        width: 80%;
-        margin: auto;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      th,
-      td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-
-      tr:hover {
-        background-color: coral;
-      }
-
-	  h2 {
-		text-align: center;
-		font-family: Arial, Helvetica, sans-serif;
-	  }
-    </style>
-  </head>
+  
   <body>
     <h2>Table Costumers</h2>
+		<a href="/costumers/add" class="button">Add Costumer</a>
 	<hr>
-    <table>
+    <table border>
       <tr>
         <th>ID</th>
         <th>Costumer Name</th>
@@ -38,6 +14,7 @@
         <th>City</th>
         <th>Postal Code</th>
         <th>Country</th>
+				<th>Action</th>
       </tr>
     <% for (let i = 0; i < costumers.length; i++) { %>
 			<tr>
@@ -48,6 +25,7 @@
 				<td><%= costumers[i].city %></td>
 				<td><%= costumers[i].postalcode %></td>
 				<td><%= costumers[i].country %></td>
+				<td><a href="">Update</a> | <a href="">Delete</a></td>
 			</tr>
 		<% } %>
     </table>
